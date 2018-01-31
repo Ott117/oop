@@ -19,6 +19,8 @@ require_once 'menu.php';
 $mainTmpl->set('content', 'Lehe sisu');
 echo $mainTmpl->parse();
 // kontrollime kontandite olemasolu
-$link =  '';
-$http->addToLink($link, 'control', 'login');
-$http->addToLink($link, 'username', 'test')
+
+
+echo $http->get('control');
+
+
